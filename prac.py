@@ -2,14 +2,6 @@ from moviepy.editor import VideoFileClip, ImageClip, CompositeVideoClip, AudioFi
 import random
 
 
-
-
-
-# audio_file_title = "ablzuq_title.mp3"
-# sc_title = "screenshot_16apx1m.png"
-# comments = ["ablzuq_ed1czme_comments"]
-
-
 def merge_sc_audio(audio_file_title, comments, sc_title):
     video_clip = VideoFileClip("game1.mp4")
     id = audio_file_title.split("_")[0]
@@ -40,7 +32,9 @@ def merge_sc_audio(audio_file_title, comments, sc_title):
     # overlay_image2 = overlay_image2.resize()
 
     overlay_duration2 = comment_clip_duration
-    start_time = audio_duration  # Specify the start time in seconds
+    start_time = audio_duration  
+
+    
     overlay_image2 = overlay_image2.set_start(start_time)
     overlay_image2 = overlay_image2.set_duration(overlay_duration2)
     overlay_image2 = overlay_image2.set_position(('center'))
