@@ -1,5 +1,14 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,osx,windows,venv
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,osx,windows,venv
+### all videos files###
+*.mp4
+*.mov
+
+# Ignore image files
+*.png
+*.jpg
+# ignore all audio
+*.mp3
 
 ### OSX ###
 # General
